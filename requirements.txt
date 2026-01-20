@@ -1,0 +1,5 @@
+Flask==3.0.3
+redis==5.0.1
+mysql-connector-python==8.4.0
+Flask-CORS==4.0.1
+python-dotenv==1.0.1
