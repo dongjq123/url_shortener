@@ -12,6 +12,7 @@ services:
       - FLASK_ENV=development
     networks:
       - shortener-network
+    restart: always
 
   mysql:
     image: mysql:8.0
