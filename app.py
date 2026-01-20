@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 # 配置Redis连接
 redis_client = redis.Redis(
-    host='192.168.10.5',
+    host='redis',
     port=6379,
     decode_responses=True
 )
@@ -21,7 +21,7 @@ redis_client = redis.Redis(
 # 配置MySQL连接
 # 先连接到MySQL服务器（不指定数据库）
 temp_connection = mysql.connector.connect(
-    host='192.168.10.5',
+    host='mysql',
     port=3306,
     user='root',
     password='123456'
@@ -34,7 +34,7 @@ temp_connection.close()
 
 # 连接到shortener数据库
 mysql_connection = mysql.connector.connect(
-    host='192.168.10.5',
+    host='mysql',
     port=3306,
     user='root',
     password='123456',
